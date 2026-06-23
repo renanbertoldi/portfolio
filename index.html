@@ -674,46 +674,6 @@
     }
 
     /* DADOS / INTELIGÊNCIA APLICADA */
-    .tools-strip {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 56px;
-    }
-
-    .tool-chip {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 9px 18px;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      transition: border-color .2s, background .2s;
-    }
-
-    .tool-chip:hover {
-      border-color: var(--gold-border);
-      background: var(--surface-hi);
-    }
-
-    .tool-chip img {
-      width: 18px;
-      height: 18px;
-      object-fit: contain;
-      filter: brightness(0) invert(1);
-      opacity: .50;
-      flex-shrink: 0;
-    }
-
-    .tool-chip span {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 10px;
-      color: var(--text-35);
-      letter-spacing: .8px;
-      white-space: nowrap;
-    }
-
     .dash-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1103,6 +1063,11 @@
           <div class="bank-card-name">Safra National Bank</div>
           <div class="bank-card-loc">Estados Unidos</div>
         </div>
+        <div class="bank-card">
+          <div class="bank-logo-wrap"><img src="assets/bank-rak-bank.png" alt="RAK Bank" class="logo-screen-gray"></div>
+          <div class="bank-card-name">RAK Bank</div>
+          <div class="bank-card-loc">Emirados Árabes Unidos</div>
+        </div>
       </div>
     </div>
   </div>
@@ -1186,26 +1151,28 @@
   <div class="container">
     <div class="s-label fade-up">Dados &amp; Inteligência — Gestão orientada por tecnologia</div>
 
-    <div class="tools-strip fade-up d1">
-      <div class="tool-chip">
-        <img src="assets/tool-powerbi.png" alt="Power BI">
-        <span>Power BI</span>
-      </div>
-      <div class="tool-chip">
-        <img src="assets/tool-n8n.png" alt="N8N">
-        <span>N8N</span>
-      </div>
-      <div class="tool-chip">
-        <img src="assets/tool-gemini.png" alt="Gemini">
-        <span>Gemini</span>
-      </div>
-      <div class="tool-chip">
-        <img src="assets/tool-claude.png" alt="Claude">
-        <span>Claude</span>
-      </div>
-      <div class="tool-chip">
-        <img src="assets/tool-calcbank.png" alt="CalcBank">
-        <span>CalcBank</span>
+    <div style="margin-bottom: 48px;">
+      <div class="bank-logo-grid intl-grid-banks fade-up d1">
+        <div class="bank-card">
+          <div class="bank-logo-wrap"><img src="assets/tool-powerbi.png" alt="Power BI"></div>
+          <div class="bank-card-name">Power BI</div>
+        </div>
+        <div class="bank-card">
+          <div class="bank-logo-wrap"><img src="assets/tool-n8n.png" alt="N8N"></div>
+          <div class="bank-card-name">N8N</div>
+        </div>
+        <div class="bank-card">
+          <div class="bank-logo-wrap"><img src="assets/tool-gemini.png" alt="Gemini"></div>
+          <div class="bank-card-name">Gemini</div>
+        </div>
+        <div class="bank-card">
+          <div class="bank-logo-wrap"><img src="assets/tool-claude.png" alt="Claude"></div>
+          <div class="bank-card-name">Claude</div>
+        </div>
+        <div class="bank-card">
+          <div class="bank-logo-wrap"><img src="assets/tool-calcbank.png" alt="CalcBank"></div>
+          <div class="bank-card-name">CalcBank</div>
+        </div>
       </div>
     </div>
 
