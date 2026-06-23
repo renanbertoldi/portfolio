@@ -661,6 +661,10 @@
     }
 
     /* DADOS / INTELIGÊNCIA APLICADA */
+    .tools-grid-6 {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
     .dash-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -828,6 +832,8 @@
       }
       .edu-cols { grid-template-columns: 1fr; gap: 52px; }
       .dash-grid { grid-template-columns: 1fr; }
+      .tools-grid-6 { grid-template-columns: repeat(3, 1fr); }
+      .bank-desktop-only { display: none; }
     }
   </style>
 </head>
@@ -1055,7 +1061,7 @@
           <div class="bank-card-name">Safra National Bank</div>
           <div class="bank-card-loc">Estados Unidos</div>
         </div>
-        <div class="bank-card">
+        <div class="bank-card bank-desktop-only">
           <div class="bank-logo-wrap"><img src="assets/bank-rak-bank.png" alt="RAK Bank"></div>
           <div class="bank-card-name">RAK Bank</div>
           <div class="bank-card-loc">Emirados Árabes Unidos</div>
@@ -1144,7 +1150,7 @@
     <div class="s-label fade-up">Dados &amp; Inteligência — Gestão orientada por tecnologia</div>
 
     <div style="margin-bottom: 48px;">
-      <div class="bank-logo-grid intl-grid-banks fade-up d1">
+      <div class="bank-logo-grid tools-grid-6 fade-up d1">
         <div class="bank-card">
           <div class="bank-logo-wrap"><img src="assets/tool-powerbi.png" alt="Power BI"></div>
           <div class="bank-card-name">Power BI</div>
@@ -1164,6 +1170,10 @@
         <div class="bank-card">
           <div class="bank-logo-wrap"><img src="assets/tool-calcbank.png" alt="CalcBank"></div>
           <div class="bank-card-name">CalcBank</div>
+        </div>
+        <div class="bank-card">
+          <div class="bank-logo-wrap"><img src="assets/tool-antigravity.png" alt="Antigravity"></div>
+          <div class="bank-card-name">Antigravity</div>
         </div>
       </div>
     </div>
