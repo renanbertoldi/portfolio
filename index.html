@@ -170,6 +170,16 @@
       flex-shrink: 0;
     }
 
+    .contact-icon {
+      width: 13px;
+      height: 13px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: .35;
+      flex-shrink: 0;
+      display: block;
+    }
+
     .hero-visual {
       position: relative;
       z-index: 2;
@@ -675,7 +685,7 @@
 
     .dash-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
 
@@ -1005,9 +1015,9 @@
     <div class="hero-rule fade-up d2"></div>
     <p class="hero-tagline fade-up d3">Construindo departamentos do zero, abrindo empresas em quatro continentes e viabilizando projetos por meio de estruturação de negócios e captação de recursos nacionais e internacionais.</p>
     <div class="hero-contacts fade-up d4">
-      <div class="contact-item"><span class="contact-dot"></span>+55 47 99620 4114</div>
-      <div class="contact-item"><span class="contact-dot"></span><a href="https://linkedin.com/in/renanbertoldi" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">linkedin.com/in/renanbertoldi</a></div>
-      <div class="contact-item"><span class="contact-dot"></span>Itajaí, SC — Brasil</div>
+      <div class="contact-item"><img src="assets/icon-whatsapp.png" alt="" class="contact-icon">+55 47 99620 4114</div>
+      <div class="contact-item"><img src="assets/icon-linkedin.png" alt="" class="contact-icon"><a href="https://linkedin.com/in/renanbertoldi" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">linkedin.com/in/renanbertoldi</a></div>
+      <div class="contact-item"><img src="assets/icon-location.png" alt="" class="contact-icon">Itajaí, SC — Brasil</div>
     </div>
   </div>
 
@@ -1356,6 +1366,17 @@
         </div>
       </div>
 
+      <div class="dash-card fade-up d3">
+        <div class="dash-screenshot">
+          <img src="assets/tool-patriarch.png" alt="Desenvolvimento de Pessoas">
+        </div>
+        <div class="dash-info">
+          <div class="dash-tool-tag">Antigravity / Claude Code</div>
+          <div class="dash-title">Desenvolvimento de Pessoas</div>
+          <div class="dash-desc">Análise de dissonância cognitiva, boletins de desempenho e geração de atas automatizadas por IA — conectando o alinhamento de expectativas ao plano de desenvolvimento individual (PDI) com foco em autonomia.</div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1542,7 +1563,11 @@
     <div class="footer-inner">
       <div>
         <div class="f-name">Renan Granemann Bertoldi</div>
-        <div class="f-info">+55 47 99620 4114 · <a href="https://linkedin.com/in/renanbertoldi" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">linkedin.com/in/renanbertoldi</a></div>
+        <div class="f-info">
+          <span style="display:inline-flex;align-items:center;gap:6px;"><img src="assets/icon-whatsapp.png" alt="" class="contact-icon" style="width:11px;height:11px;">+55 47 99620 4114</span>
+          <span style="opacity:.25;">·</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;"><img src="assets/icon-linkedin.png" alt="" class="contact-icon" style="width:11px;height:11px;"><a href="https://linkedin.com/in/renanbertoldi" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">linkedin.com/in/renanbertoldi</a></span>
+        </div>
       </div>
       <div class="f-right">
         <div class="f-tag">Portfólio</div>
